@@ -1,0 +1,19 @@
+{
+  "name": "grocery-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mobile grocery list that compares Woolworths, Coles and ALDI prices via a Cloudflare Worker",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test \"test/*.test.js\"",
+    "check-stores": "node scripts/check-stores.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4.142.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

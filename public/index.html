@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Grocery Compare</title>
+    <meta name="description" content="Grocery list that finds the cheapest match at Woolworths, Coles and ALDI." />
+    <meta name="theme-color" content="#0f766e" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1412" media="(prefers-color-scheme: dark)" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Grocery" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/js/app.js"></script>
+  </head>
+  <body>
+    <header class="top">
+      <h1>Grocery</h1>
+      <button id="refresh" class="icon-btn" data-action="refresh" aria-label="Refresh prices">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5" /></svg>
+      </button>
+      <button class="icon-btn" data-action="open-settings" aria-label="Settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z" /></svg>
+      </button>
+    </header>
+
+    <form id="add-form" class="add" autocomplete="off">
+      <input id="add-input" type="text" placeholder="Add item, e.g. milk 2L" aria-label="Add item" enterkeyhint="done" autocapitalize="none" />
+      <button class="btn primary" aria-label="Add">Add</button>
+    </form>
+
+    <main>
+      <div id="empty" class="empty">
+        <p><b>Your list is empty.</b></p>
+        <p>Add things like <em>milk 2L</em>, <em>6 bananas</em>, <em>2 x bread</em> or <em>coke 30 pack</em>. Separate several with commas.</p>
+      </div>
+      <ul id="list" class="list"></ul>
+    </main>
+
+    <footer id="summary" class="summary" hidden></footer>
+
+    <dialog id="sheet" class="sheet" aria-label="Details"><div id="sheet-body" class="sheet-body" tabindex="-1"></div></dialog>
+    <div id="toast" class="toast" role="status" hidden></div>
+  </body>
+</html>

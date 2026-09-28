@@ -147,3 +147,10 @@ test('relevance: the query word must be the head noun', () => {
   const flavoured = relevance('milk', { name: 'Oak Chocolate Milk 600ml', brand: 'Oak' }).score;
   assert.ok(plain > flavoured && flavoured > choc, `${plain} > ${flavoured} > ${choc}`);
 });
+
+test('a different pack size is compared pro rata', () => {
+  const m = run('coke 30 pack', 'coke');
+  const aldi = m.picks.aldi;
+  if (aldi?.sizeNote === 'smaller size') assert.ok(aldi.compareCost > aldi.cost);
+  for (const s of ['woolworths', 'coles']) assert.equal(m.picks[s].compareCost, m.picks[s].cost);
+});

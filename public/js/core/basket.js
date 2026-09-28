@@ -1,8 +1,12 @@
 // Basket totals per store, the best split across stores, and the savings it gives.
 import { round2 } from './match.js';
 
+// A pick's cost is what you pay; compareCost (when present) is that price scaled to the
+// size asked for, so a smaller pack doesn't "win" just by being smaller.
+const cmpCost = (pick) => pick.compareCost ?? pick.cost;
+
 /**
- * @param rows    [{ picks: { [storeId]: { cost } | null } }]  one per list item
+ * @param rows    [{ picks: { [storeId]: { cost, compareCost? } | null } }]  one per list item
  * @param stores  storeIds to consider (in display order)
  */
 export function summarise(rows, stores) {
@@ -14,14 +18,14 @@ export function summarise(rows, stores) {
 
   rows.forEach((row, i) => {
     let bestStore = null;
-    let bestCost = Infinity;
+    let bestCmp = Infinity;
     for (const s of stores) {
       const pick = row.picks?.[s];
       if (pick && pick.cost >= 0) {
         perStore[s].total += pick.cost;
         perStore[s].found++;
-        if (pick.cost < bestCost - 1e-9) {
-          bestCost = pick.cost;
+        if (cmpCost(pick) < bestCmp - 1e-9) {
+          bestCmp = cmpCost(pick);
           bestStore = s;
         }
       } else {
@@ -30,9 +34,10 @@ export function summarise(rows, stores) {
     }
     split.assignment[i] = bestStore;
     if (bestStore) {
-      split.total += bestCost;
+      const cost = row.picks[bestStore].cost;
+      split.total += cost;
       split.found++;
-      split.byStore[bestStore].total += bestCost;
+      split.byStore[bestStore].total += cost;
       split.byStore[bestStore].items.push(i);
     } else {
       split.missing++;
@@ -57,7 +62,7 @@ export function summarise(rows, stores) {
     rows.forEach((row, i) => {
       const own = row.picks?.[cheapestStore];
       const best = split.assignment[i] && row.picks[split.assignment[i]];
-      if (own && best) savings += own.cost - best.cost;
+      if (own && best) savings += cmpCost(own) - cmpCost(best);
     });
   }
 
@@ -79,8 +84,8 @@ export function bestCombo(rows, stores, size) {
     let total = 0;
     let missing = 0;
     for (const row of rows) {
-      const costs = combo.map((s) => row.picks?.[s]?.cost).filter((c) => c >= 0);
-      if (costs.length) total += Math.min(...costs);
+      const picks = combo.map((s) => row.picks?.[s]).filter((p) => p && p.cost >= 0);
+      if (picks.length) total += picks.reduce((a, b) => (cmpCost(b) < cmpCost(a) ? b : a)).cost;
       else missing++;
     }
     if (!best || missing < best.missing || (missing === best.missing && total < best.total - 1e-9)) {

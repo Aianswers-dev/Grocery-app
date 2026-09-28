@@ -1,15 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#0f766e"/>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1f7a54"/><stop offset="1" stop-color="#0f4a33"/></linearGradient></defs>
+  <rect width="512" height="512" fill="url(#g)"/>
   <g transform="translate(51 51) scale(0.8)">
-    <g fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M104 150h44l40 196h196l36-140H170"/>
-      <circle cx="210" cy="404" r="18" fill="#fff" stroke="none"/>
-      <circle cx="366" cy="404" r="18" fill="#fff" stroke="none"/>
+    <g transform="translate(96 104) scale(13.4)" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.5L22 8H6"/>
+      <circle cx="10" cy="20.5" r="1.5"/><circle cx="18" cy="20.5" r="1.5"/>
     </g>
-    <g transform="translate(300 88) rotate(20)">
-      <path d="M0 0h96l34 34-34 34H0z" fill="#fbbf24"/>
-      <circle cx="22" cy="34" r="10" fill="#0f766e"/>
-    </g>
-    <text x="263" y="298" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" text-anchor="middle">$</text>
+    <circle cx="392" cy="120" r="34" fill="#ffb547" stroke="#1d7550" stroke-width="12"/>
   </g>
 </svg>

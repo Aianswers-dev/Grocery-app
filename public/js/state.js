@@ -8,8 +8,9 @@ const DB_STORE = 'results';
 export const state = {
   items: [], // { id, text, qty, checked, addedAt }
   memory: {}, // { [itemKey]: { [storeId]: { id, name } | { none: true } } }
-  settings: { passcode: '', locations: {}, disabled: [] },
+  settings: { passcode: '', locations: {}, disabled: [], theme: 'system' },
   stores: [], // cached copy of /api/stores
+  history: [], // { text, n, at } items added before, for suggestions
   results: {}, // { [resultKey]: { at, products, error } }  (persisted in IndexedDB)
 };
 
@@ -21,6 +22,7 @@ export function load() {
       state.memory = saved.memory || {};
       state.settings = { ...state.settings, ...(saved.settings || {}) };
       state.stores = Array.isArray(saved.stores) ? saved.stores : [];
+      state.history = Array.isArray(saved.history) ? saved.history : [];
     }
   } catch {
     // corrupted or blocked storage: start empty
@@ -29,10 +31,27 @@ export function load() {
 
 export function save() {
   try {
-    const { items, memory, settings, stores } = state;
-    localStorage.setItem(KEY, JSON.stringify({ items, memory, settings, stores }));
+    const { items, memory, settings, stores, history } = state;
+    localStorage.setItem(KEY, JSON.stringify({ items, memory, settings, stores, history }));
   } catch {
     // storage full or blocked: keep working in memory
+  }
+}
+
+/** Remember an item text for suggestions next time. */
+export function rememberText(text) {
+  const key = text.trim().toLowerCase();
+  if (!key) return;
+  const h = state.history.find((x) => x.text.toLowerCase() === key);
+  if (h) {
+    h.n++;
+    h.at = Date.now();
+  } else {
+    state.history.push({ text: text.trim(), n: 1, at: Date.now() });
+  }
+  if (state.history.length > 150) {
+    state.history.sort((a, b) => b.n - a.n || b.at - a.at);
+    state.history.length = 150;
   }
 }
 

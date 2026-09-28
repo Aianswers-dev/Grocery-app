@@ -1,6 +1,6 @@
 // Service worker: keeps the app itself available offline (e.g. in-store with poor
 // reception). Prices come from /api and are cached by the app in IndexedDB.
-const VERSION = 'v1';
+const VERSION = 'v2';
 const CACHE = `grocery-shell-${VERSION}`;
 // Not '/index.html': Cloudflare redirects it to '/', and a redirected response can't be
 // used to answer a page load.
@@ -15,6 +15,10 @@ const SHELL = [
   '/js/core/query.js',
   '/js/core/match.js',
   '/js/core/basket.js',
+  '/js/ui/icons.js',
+  '/js/ui/emoji.js',
+  '/js/ui/gestures.js',
+  '/fonts/bricolage-grotesque.woff2',
   '/icons/icon.svg',
   '/icons/icon-192.png',
   '/icons/apple-touch-icon.png',

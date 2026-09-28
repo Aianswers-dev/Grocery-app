@@ -1,16 +1,19 @@
-# Grocery Compare
+# Trolley
 
-A phone-friendly grocery list (PWA) that checks **Woolworths, Coles and ALDI** for every item,
-auto-picks the cheapest sensible match (comparing unit prices), and shows each store's basket
-total plus a **best split** across stores with the savings. Your list lives on your phone.
-A Cloudflare Worker hosts the app and fetches the store data, because the supermarkets block
-requests made directly from a browser.
+**Trolley** is a phone-friendly grocery list (PWA) that checks **Woolworths, Coles and ALDI**
+for every item. It auto-picks the cheapest sensible match (comparing unit prices), then shows
+each store's basket total plus a **best split** across stores with the savings. Your list lives
+on your phone. A Cloudflare Worker hosts the app and fetches the store data, because the
+supermarkets block requests made directly from a browser.
 
 <p>
-  <img src="docs/screenshot-list.png" width="240" alt="List with prices at each store">
-  <img src="docs/screenshot-item.png" width="240" alt="Choosing a different product">
-  <img src="docs/screenshot-basket.png" width="240" alt="Basket totals and shopping plan">
+  <img src="docs/list.png" width="200" alt="List with each store's price and the best split">
+  <img src="docs/item.png" width="200" alt="Choosing a different product at a store">
+  <img src="docs/basket.png" width="200" alt="Basket totals and shopping plan">
+  <img src="docs/list-dark.png" width="200" alt="Dark mode">
 </p>
+
+*Screenshots use real prices captured from the three stores on 28 Sep 2026.*
 
 ## Store status
 
@@ -36,7 +39,7 @@ You need this GitHub repo and a free Cloudflare account. Everything below works 
 browser.
 
 1. **Merge the pull request.** In the GitHub app (or github.com), open this repo → *Pull
-   requests* → the Grocery Compare PR → **Merge**.
+   requests* → the Trolley PR → **Merge**.
    *(Optional: repo **Settings → General → Default branch** → set it to `main`.)*
 2. **Create the Worker from GitHub.**
    1. Go to **dash.cloudflare.com** and log in or sign up (free plan is fine).
@@ -93,22 +96,27 @@ grocery list needs.
   3. It also allows exact multiples, e.g. 2 × 2L for `milk 4L`, or 6 loose bananas for
      `bananas 1kg`.
   4. Among those, the **lowest unit price** ($/L, $/kg or $/each) wins.
-- **Price chips** on each item:
-  - Green outline: cheapest store for that item.
-  - **≈**: a different pack size (nothing was close to your size).
-  - **•**: a product you picked yourself.
-  - **!**: the store couldn't be reached.
-  - **—**: no match at that store.
-- **Tap an item** to see every store's options with unit prices.
+- **Price chips** on each item show every store's price and how much more it is than the best
+  (e.g. `+41¢`):
+  - Green with ✓ **best**: the cheapest store for that item.
+  - **≈ smaller / bigger**: that store has nothing near your size. For picking the best store
+    it's compared pro rata, so an 18-pack can't beat a 30-pack just by being smaller.
+  - Orange ring on the store badge: a product you picked yourself.
+  - **!**: the store couldn't be reached. **—**: no match at that store.
+- **Gestures:** swipe an item **right** to tick it into the trolley, or **left** to remove it
+  (with Undo). Drag any sheet down to close it.
+- **Suggestions:** things you've added before show up as one-tap chips when you start typing.
+- **Tap an item** to see every store's options, with unit prices and a value bar.
   - Tap a product to make it your pick. It's remembered for that item on this phone.
   - **Auto: cheapest** goes back to automatic.
-  - **Not at <store>** leaves that store out for the item.
+  - **Skip <store>** leaves that store out for the item.
   - **↗** opens the product on the store's website.
-- **Tap the totals bar** to open the basket: each store's total, the best split and what it
-  saves, the best two-store combination, and a shopping plan grouped by store with tick
-  boxes.
-- **Stored on the phone:** the list, your picks and settings are in localStorage, and cached
-  prices are in IndexedDB. Use ⚙️ **Back up list / Restore backup** to move them to another
+- **Tap the green card** (or the floating total once you scroll) to open the basket: each
+  store's total, the best split and what it saves, the best two-store combination, and a
+  shopping plan grouped by store with tick boxes. **Share this plan** sends it as text.
+- **Appearance:** ⚙️ Settings → System, Light or Dark.
+- **Stored on the phone:** the list, your picks, suggestions and settings are in
+  localStorage, and cached prices are in IndexedDB. Use ⚙️ **Back up list / Restore backup** to move them to another
   phone.
 - **Price refresh:** prices refresh when they're more than 12 hours old, when you reopen the
   app, or when you tap ↻. The app itself works offline (e.g. in a store with bad
@@ -159,8 +167,9 @@ src/worker.js            Worker: API routes, passcode check, caching; serves /pu
 src/http.js              fetch helpers (timeouts, cookies, browser-like headers)
 src/stores/              one plug-in per supermarket + index.js registry
 public/                  the PWA (static, no build step)
-  index.html, styles.css, manifest.webmanifest, sw.js, icons/
+  index.html, styles.css, manifest.webmanifest, sw.js, icons/, fonts/
   js/app.js              UI
+  js/ui/                 icons, item emoji, swipe/drag gestures
   js/api.js, js/state.js talking to the Worker; storage on the phone
   js/core/               shared logic (also used by the Worker)
     query.js             "2 x milk 2L" -> { qty, name, size }
@@ -198,5 +207,6 @@ The Worker API (all but `/api/stores` need the `X-Passcode` header):
   (Flybuys, Everyday Rewards) and multi-buy deals aren't included.
 - ALDI doesn't sell groceries online, so its prices are the in-store prices listed on
   aldi.com.au.
+- The display font is Bricolage Grotesque (SIL Open Font License, `public/fonts/OFL.txt`).
 - This is for personal use. Be gentle: the app caches results and refreshes at most every
   12 hours.

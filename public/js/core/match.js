@@ -366,15 +366,21 @@ export function matchItem(item, results, memory = {}) {
     : inferTarget(candidatesByStore);
 
   const qty = item.qty || 1;
-  const makePick = (s, fit, dim, extra = {}) => ({
-    product: s.product,
-    packs: fit.packs,
-    cost: round2(s.product.price * fit.packs * qty),
-    unitCost: unitCost(s, dim),
-    estimated: !!s.size.estimated,
-    score: s.score,
-    ...extra,
-  });
+  const makePick = (s, fit, dim, extra = {}) => {
+    const cost = round2(s.product.price * fit.packs * qty);
+    return {
+      product: s.product,
+      packs: fit.packs,
+      cost,
+      // What it would cost at the size asked for; used to compare stores fairly when a
+      // store only has a different pack size. Equal to cost for picks within the size window.
+      compareCost: extra.ratio ? round2(cost / extra.ratio) : cost,
+      unitCost: unitCost(s, dim),
+      estimated: !!s.size.estimated,
+      score: s.score,
+      ...extra,
+    };
+  };
   const cheapest = (list, dim) => list.sort((a, b) => cmp(unitCost(a.s, dim), unitCost(b.s, dim)) || b.s.score - a.s.score)[0];
 
   const picks = {};
@@ -425,7 +431,7 @@ export function matchItem(item, results, memory = {}) {
       sized.sort((a, b) => cmp(dist(a), dist(b)) || cmp(a.product.price, b.product.price));
       const s = sized[0];
       const ratio = s.size.dims[target.dim] / target.amount;
-      const pick = makePick(s, { packs: 1 }, target.dim, { sizeNote: ratio > 1 ? 'bigger size' : 'smaller size', ...lost });
+      const pick = makePick(s, { packs: 1 }, target.dim, { sizeNote: ratio > 1 ? 'bigger size' : 'smaller size', ratio, ...lost });
       if (ratio >= CLOSEST_MIN && ratio <= CLOSEST_MAX) picks[store] = pick;
       else suggestions[store] = pick;
     } else if (cands.every((s) => s.size.dim == null)) {

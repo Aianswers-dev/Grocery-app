@@ -110,3 +110,11 @@ test('bestCombo prefers covering every item', () => {
   assert.equal(pair.missing, 0);
   assert.equal(pair.total, 2);
 });
+
+test('a smaller pack does not win the split just by being smaller', () => {
+  // Store a: 30 cans for $32. Store b only has 18 cans for $20.99 (scaled to 30: $34.98).
+  const rows = [{ picks: { a: { cost: 32 }, b: { cost: 20.99, compareCost: 34.98, sizeNote: 'smaller size' } } }];
+  const s = summarise(rows, ['a', 'b']);
+  assert.deepEqual(s.split.assignment, ['a']);
+  assert.equal(s.split.total, 32);
+});

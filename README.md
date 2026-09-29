@@ -98,7 +98,9 @@ grocery list needs.
   4. Among those, the **lowest unit price** ($/L, $/kg or $/each) wins.
 - **Price chips** on each item show every store's price and how much more it is than the best
   (e.g. `+41¢`):
-  - Green with ✓ **best**: the cheapest store for that item.
+  - Green with ✓ **best**: the cheapest store for that item. When prices are equal, your
+    preferred store wins (Coles by default; change it in ⚙️ Settings → *When prices are equal,
+    pick*), and the others say **same**.
   - **≈ smaller / bigger**: that store has nothing near your size. For picking the best store
     it's compared pro rata, so an 18-pack can't beat a 30-pack just by being smaller.
   - Orange ring on the store badge: a product you picked yourself.

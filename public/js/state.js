@@ -8,7 +8,8 @@ const DB_STORE = 'results';
 export const state = {
   items: [], // { id, text, qty, checked, addedAt }
   memory: {}, // { [itemKey]: { [storeId]: { id, name } | { none: true } } }
-  settings: { passcode: '', locations: {}, disabled: [], theme: 'system' },
+  // preferred: the store picked when prices are equal
+  settings: { passcode: '', locations: {}, disabled: [], theme: 'system', preferred: 'coles' },
   stores: [], // cached copy of /api/stores
   history: [], // { text, n, at } items added before, for suggestions
   results: {}, // { [resultKey]: { at, products, error } }  (persisted in IndexedDB)

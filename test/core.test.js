@@ -118,3 +118,21 @@ test('a smaller pack does not win the split just by being smaller', () => {
   assert.deepEqual(s.split.assignment, ['a']);
   assert.equal(s.split.total, 32);
 });
+
+test('equal prices go to the preferred store', () => {
+  const rows = [
+    { picks: { w: { cost: 4.95 }, c: { cost: 4.95 }, a: { cost: 4.95 } } },
+    { picks: { w: { cost: 2 }, c: { cost: 2.5 }, a: { cost: 2.2 } } },
+  ];
+  const s = summarise(rows, ['w', 'c', 'a'], { prefer: 'c' });
+  assert.deepEqual(s.split.assignment, ['c', 'w'], 'ties go to Coles, but a cheaper price still wins');
+  // Without a preference, the first store in display order wins a tie.
+  assert.deepEqual(summarise(rows, ['w', 'c', 'a']).split.assignment, ['w', 'w']);
+});
+
+test('the preferred store wins a tie for cheapest single store and best pair', () => {
+  const rows = [{ picks: { w: { cost: 3 }, c: { cost: 3 }, a: { cost: 3 } } }];
+  const s = summarise(rows, ['w', 'c', 'a'], { prefer: 'c' });
+  assert.equal(s.cheapestStore, 'c');
+  assert.ok(s.bestPair.stores.includes('c'));
+});

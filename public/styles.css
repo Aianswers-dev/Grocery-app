@@ -946,6 +946,10 @@ button {
   stroke-width: 3.2;
 }
 
+.chip.tie small {
+  color: var(--good);
+}
+
 .chip.warn .v {
   color: var(--warn);
   font-size: 0.9rem;

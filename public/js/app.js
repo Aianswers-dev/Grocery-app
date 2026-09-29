@@ -86,12 +86,17 @@ function bump() {
 }
 
 const cmpCost = (pick) => pick.compareCost ?? pick.cost;
+const TIE = 0.004; // prices are in whole cents
 
+/** The store to buy an item at: cheapest, and the preferred store when prices are equal. */
 function bestStoreFor(m) {
+  const prefer = state.settings.preferred;
   let best = null;
   for (const s of enabledStores()) {
     const p = m.picks[s.id];
-    if (p && (!best || cmpCost(p) < cmpCost(m.picks[best]) - 1e-9)) best = s.id;
+    if (!p) continue;
+    const d = best ? cmpCost(p) - cmpCost(m.picks[best]) : -1;
+    if (d < -TIE || (Math.abs(d) <= TIE && s.id === prefer)) best = s.id;
   }
   return best;
 }
@@ -99,7 +104,7 @@ function bestStoreFor(m) {
 function currentSummary() {
   const stores = enabledStores().map((s) => s.id);
   const rows = state.items.map((item) => ({ item, ...matchFor(item) }));
-  return { rows, stores, summary: summarise(rows, stores) };
+  return { rows, stores, summary: summarise(rows, stores, { prefer: state.settings.preferred }) };
 }
 
 // ---------- fetching ----------
@@ -378,7 +383,7 @@ function deltaText(d) {
   return d < 1 ? `+${Math.round(d * 100)}¢` : `+$${d.toFixed(2)}`;
 }
 
-function chipHtml(store, m, bestCost) {
+function chipHtml(store, m, bestCost, bestStore) {
   const st = m.status[store.id] || {};
   const pick = m.picks[store.id];
   const cls = ['chip'];
@@ -387,9 +392,12 @@ function chipHtml(store, m, bestCost) {
   let title = store.name;
   if (pick) {
     v = money(pick.cost);
-    if (bestCost != null && cmpCost(pick) <= bestCost + 0.004) {
+    if (store.id === bestStore) {
       cls.push('win');
       extra = `${icon('check')}best`;
+    } else if (bestCost != null && cmpCost(pick) <= bestCost + TIE) {
+      cls.push('tie');
+      extra = 'same';
     } else if (bestCost != null) {
       extra = deltaText(cmpCost(pick) - bestCost);
     }
@@ -454,7 +462,7 @@ function rowHtml(item, stores) {
             ${bp ? `<div class="best"><b>${money(bp.cost)}</b><small>${mono(bestStore)}${esc(bestStore.name)}</small></div>` : ''}
           </div>
         </div>
-        ${done ? '' : `<div class="chips" data-action="open-item" style="--n:${stores.length}">${stores.map((s) => chipHtml(s, m, bp ? cmpCost(bp) : null)).join('')}</div>`}
+        ${done ? '' : `<div class="chips" data-action="open-item" style="--n:${stores.length}">${stores.map((s) => chipHtml(s, m, bp ? cmpCost(bp) : null, best)).join('')}</div>`}
       </div>
     </li>`;
 }
@@ -788,6 +796,10 @@ function settingsSheet() {
       }
       <p class="group-title">Stores</p>
       <div class="group">${storeCells}</div>
+      <p class="group-title">When prices are equal, pick</p>
+      <div class="seg small" role="group" aria-label="Preferred store when prices are equal">${[...enabledStores(), { id: '', name: 'Any' }]
+        .map((st) => `<button class="${(s.preferred || '') === st.id ? 'on' : ''}" data-action="prefer" data-store="${esc(st.id)}" aria-pressed="${(s.preferred || '') === st.id}">${esc(st.name)}</button>`)
+        .join('')}</div>
       <div class="group">
         <button class="cell" data-action="status" ${ui.statusBusy ? 'disabled' : ''}><span class="lead">${icon('pulse')}</span><span class="grow">${ui.statusBusy ? 'Checking stores…' : 'Check stores now'}<small>Live test of every store's search</small></span>${icon('chevron', 'chev')}</button>
         ${status}
@@ -1083,6 +1095,12 @@ function onClick(e) {
       break;
     case 'status':
       checkStatus();
+      break;
+    case 'prefer':
+      state.settings.preferred = el.dataset.store || null;
+      save();
+      bump();
+      render();
       break;
     case 'theme':
       state.settings.theme = el.dataset.theme;

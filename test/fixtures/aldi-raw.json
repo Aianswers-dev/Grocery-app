@@ -1,0 +1,630 @@
+{
+ "meta": {
+  "pagination": {
+   "offset": 0,
+   "limit": 30,
+   "totalCount": 91
+  }
+ },
+ "data": [
+  {
+   "sku": "000000000538441002",
+   "name": "Milk Mouse - Milk Chocolate 168g",
+   "brandName": "CHOCEUR",
+   "urlSlugText": "choceur-milk-mouse-milk-chocolate-168g",
+   "urlSlugTextAlternatives": [],
+   "ageRestriction": null,
+   "alcohol": null,
+   "discontinued": false,
+   "discontinuedNote": null,
+   "notForSale": true,
+   "notForSaleReason": null,
+   "quantityMin": 1,
+   "quantityMax": 99,
+   "quantityInterval": 1,
+   "quantityDefault": 1,
+   "quantityUnit": "ea",
+   "weightType": "0",
+   "sellingSize": "168 g",
+   "energyClass": null,
+   "onSaleDateDisplay": null,
+   "onSaleDate": null,
+   "isAbstract": false,
+   "abstractSku": "000000000000538441",
+   "isDropship": false,
+   "sellingUnitDisplay": null,
+   "price": {
+    "amount": 399,
+    "amountRelevant": 399,
+    "amountRelevantDisplay": "$3.99",
+    "bottleDeposit": 0,
+    "bottleDepositDisplay": "$0.00",
+    "comparison": 238,
+    "comparisonDisplay": "$2.38 per 100 g",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "perUnit": null,
+    "perUnitDisplay": null,
+    "wasPriceDisplay": null,
+    "additionalInfo": null,
+    "savingsDisplay": null,
+    "bottleDepositType": null,
+    "feeText": null
+   },
+   "countryExtensions": null,
+   "categories": [
+    {
+     "id": "970000000",
+     "name": "Pantry",
+     "urlSlugText": "pantry"
+    },
+    {
+     "id": "1111111181",
+     "name": "Confectionery",
+     "urlSlugText": "pantry/confectionery"
+    }
+   ],
+   "assets": [
+    {
+     "url": "https://dm.apac.cms.aldi.cx/is/image/aldiprodapac/product/jpg/scaleWidth/{width}/d0097d9d-25d6-4cd1-b1dd-1ea5f7a154ba/{slug}",
+     "maxWidth": 1500,
+     "maxHeight": 1500,
+     "mimeType": "image/*",
+     "assetType": "FR01",
+     "alt": null,
+     "displayName": null
+    }
+   ],
+   "badges": []
+  },
+  {
+   "sku": "000000000000545135",
+   "name": "Milk Frother",
+   "brandName": "EXPRESSI",
+   "urlSlugText": "expressi-milk-frother",
+   "urlSlugTextAlternatives": [],
+   "ageRestriction": null,
+   "alcohol": null,
+   "discontinued": false,
+   "discontinuedNote": null,
+   "notForSale": true,
+   "notForSaleReason": null,
+   "quantityMin": 1,
+   "quantityMax": 99,
+   "quantityInterval": 1,
+   "quantityDefault": 1,
+   "quantityUnit": "ea",
+   "weightType": "0",
+   "sellingSize": null,
+   "energyClass": null,
+   "onSaleDateDisplay": null,
+   "onSaleDate": null,
+   "isAbstract": false,
+   "abstractSku": "000000000000545135A",
+   "isDropship": false,
+   "sellingUnitDisplay": null,
+   "price": {
+    "amount": 3199,
+    "amountRelevant": 3199,
+    "amountRelevantDisplay": "$31.99",
+    "bottleDeposit": 0,
+    "bottleDepositDisplay": "$0.00",
+    "comparison": null,
+    "comparisonDisplay": null,
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "perUnit": null,
+    "perUnitDisplay": null,
+    "wasPriceDisplay": null,
+    "additionalInfo": null,
+    "savingsDisplay": null,
+    "bottleDepositType": null,
+    "feeText": null
+   },
+   "countryExtensions": null,
+   "categories": [
+    {
+     "id": "970000000",
+     "name": "Pantry",
+     "urlSlugText": "pantry"
+    },
+    {
+     "id": "1111111175",
+     "name": "Tea, Coffee & Hot Chocolate",
+     "urlSlugText": "pantry/tea-coffee-hot-chocolate"
+    }
+   ],
+   "assets": [
+    {
+     "url": "https://dm.apac.cms.aldi.cx/is/image/aldiprodapac/product/jpg/scaleWidth/{width}/20707939-52d7-490c-a098-2144f91fd1ee/{slug}",
+     "maxWidth": 1500,
+     "maxHeight": 1500,
+     "mimeType": "image/*",
+     "assetType": "FR01",
+     "alt": null,
+     "displayName": null
+    }
+   ],
+   "badges": []
+  },
+  {
+   "sku": "000000000000398691",
+   "name": "Light Milk 2L",
+   "brandName": "FARMDALE",
+   "urlSlugText": "farmdale-light-milk-2l",
+   "urlSlugTextAlternatives": [],
+   "ageRestriction": null,
+   "alcohol": null,
+   "discontinued": false,
+   "discontinuedNote": null,
+   "notForSale": true,
+   "notForSaleReason": null,
+   "quantityMin": 1,
+   "quantityMax": 99,
+   "quantityInterval": 1,
+   "quantityDefault": 1,
+   "quantityUnit": "ea",
+   "weightType": "0",
+   "sellingSize": "2 L",
+   "energyClass": null,
+   "onSaleDateDisplay": null,
+   "onSaleDate": null,
+   "isAbstract": false,
+   "abstractSku": "000000000000398691A",
+   "isDropship": false,
+   "sellingUnitDisplay": null,
+   "price": {
+    "amount": 339,
+    "amountRelevant": 339,
+    "amountRelevantDisplay": "$3.39",
+    "bottleDeposit": 0,
+    "bottleDepositDisplay": "$0.00",
+    "comparison": 170,
+    "comparisonDisplay": "$1.70 per 1 L",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "perUnit": null,
+    "perUnitDisplay": null,
+    "wasPriceDisplay": null,
+    "additionalInfo": null,
+    "savingsDisplay": null,
+    "bottleDepositType": null,
+    "feeText": null
+   },
+   "countryExtensions": null,
+   "categories": [
+    {
+     "id": "960000000",
+     "name": "Dairy, Eggs & Fridge",
+     "urlSlugText": "dairy-eggs-fridge"
+    },
+    {
+     "id": "1111111160",
+     "name": "Milk",
+     "urlSlugText": "dairy-eggs-fridge/milk"
+    }
+   ],
+   "assets": [
+    {
+     "url": "https://dm.apac.cms.aldi.cx/is/image/aldiprodapac/product/jpg/scaleWidth/{width}/93645b60-eb11-4046-b28e-2b441f8585a4/{slug}",
+     "maxWidth": 1500,
+     "maxHeight": 1500,
+     "mimeType": "image/*",
+     "assetType": "FR01",
+     "alt": null,
+     "displayName": null
+    }
+   ],
+   "badges": []
+  },
+  {
+   "sku": "000000000000399309",
+   "name": "Oat Milk 1L",
+   "brandName": "INNER GOODNESS",
+   "urlSlugText": "inner-goodness-oat-milk-1l",
+   "urlSlugTextAlternatives": [],
+   "ageRestriction": null,
+   "alcohol": null,
+   "discontinued": false,
+   "discontinuedNote": null,
+   "notForSale": true,
+   "notForSaleReason": null,
+   "quantityMin": 1,
+   "quantityMax": 99,
+   "quantityInterval": 1,
+   "quantityDefault": 1,
+   "quantityUnit": "ea",
+   "weightType": "0",
+   "sellingSize": "1 L",
+   "energyClass": null,
+   "onSaleDateDisplay": null,
+   "onSaleDate": null,
+   "isAbstract": false,
+   "abstractSku": "000000000000399309A",
+   "isDropship": false,
+   "sellingUnitDisplay": null,
+   "price": {
+    "amount": 165,
+    "amountRelevant": 165,
+    "amountRelevantDisplay": "$1.65",
+    "bottleDeposit": 0,
+    "bottleDepositDisplay": "$0.00",
+    "comparison": 165,
+    "comparisonDisplay": "$1.65 per 1 L",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "perUnit": null,
+    "perUnitDisplay": null,
+    "wasPriceDisplay": null,
+    "additionalInfo": null,
+    "savingsDisplay": null,
+    "bottleDepositType": null,
+    "feeText": null
+   },
+   "countryExtensions": null,
+   "categories": [
+    {
+     "id": "960000000",
+     "name": "Dairy, Eggs & Fridge",
+     "urlSlugText": "dairy-eggs-fridge"
+    },
+    {
+     "id": "1111111160",
+     "name": "Milk",
+     "urlSlugText": "dairy-eggs-fridge/milk"
+    }
+   ],
+   "assets": [
+    {
+     "url": "https://dm.apac.cms.aldi.cx/is/image/aldiprodapac/product/jpg/scaleWidth/{width}/5e2db012-63cf-4f59-b31b-0b6f40f5a4d2/{slug}",
+     "maxWidth": 1500,
+     "maxHeight": 1500,
+     "mimeType": "image/*",
+     "assetType": "FR01",
+     "alt": null,
+     "displayName": null
+    }
+   ],
+   "badges": []
+  },
+  {
+   "sku": "000000000000399794",
+   "name": "Milk Duds 141g",
+   "brandName": "HERSHEY'S",
+   "urlSlugText": "hershey-s-milk-duds-141g",
+   "urlSlugTextAlternatives": [],
+   "ageRestriction": null,
+   "alcohol": null,
+   "discontinued": false,
+   "discontinuedNote": null,
+   "notForSale": true,
+   "notForSaleReason": null,
+   "quantityMin": 1,
+   "quantityMax": 99,
+   "quantityInterval": 1,
+   "quantityDefault": 1,
+   "quantityUnit": "ea",
+   "weightType": "0",
+   "sellingSize": "141 g",
+   "energyClass": null,
+   "onSaleDateDisplay": "While Stocks Last",
+   "onSaleDate": "2026-09-02",
+   "isAbstract": false,
+   "abstractSku": "000000000000399794A",
+   "isDropship": false,
+   "sellingUnitDisplay": null,
+   "price": {
+    "amount": 399,
+    "amountRelevant": 399,
+    "amountRelevantDisplay": "$3.99",
+    "bottleDeposit": 0,
+    "bottleDepositDisplay": "$0.00",
+    "comparison": 283,
+    "comparisonDisplay": "$2.83 per 100 g",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "perUnit": null,
+    "perUnitDisplay": null,
+    "wasPriceDisplay": null,
+    "additionalInfo": null,
+    "savingsDisplay": null,
+    "bottleDepositType": null,
+    "feeText": null
+   },
+   "countryExtensions": null,
+   "categories": [],
+   "assets": [
+    {
+     "url": "https://dm.apac.cms.aldi.cx/is/image/aldiprodapac/product/jpg/scaleWidth/{width}/9c8272e7-5ee6-4073-8acd-e2853e9a2d95/{slug}",
+     "maxWidth": 1500,
+     "maxHeight": 1500,
+     "mimeType": "image/*",
+     "assetType": "FR01",
+     "alt": null,
+     "displayName": null
+    }
+   ],
+   "badges": []
+  },
+  {
+   "sku": "000000000000399905",
+   "name": "Soy Milk 1L",
+   "brandName": "BONSOY",
+   "urlSlugText": "bonsoy-soy-milk-1l",
+   "urlSlugTextAlternatives": [],
+   "ageRestriction": null,
+   "alcohol": null,
+   "discontinued": false,
+   "discontinuedNote": null,
+   "notForSale": true,
+   "notForSaleReason": null,
+   "quantityMin": 1,
+   "quantityMax": 99,
+   "quantityInterval": 1,
+   "quantityDefault": 1,
+   "quantityUnit": "ea",
+   "weightType": "0",
+   "sellingSize": "1 L",
+   "energyClass": null,
+   "onSaleDateDisplay": null,
+   "onSaleDate": null,
+   "isAbstract": false,
+   "abstractSku": "000000000000399905A",
+   "isDropship": false,
+   "sellingUnitDisplay": null,
+   "price": {
+    "amount": 449,
+    "amountRelevant": 449,
+    "amountRelevantDisplay": "$4.49",
+    "bottleDeposit": 0,
+    "bottleDepositDisplay": "$0.00",
+    "comparison": 449,
+    "comparisonDisplay": "$4.49 per 1 L",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "perUnit": null,
+    "perUnitDisplay": null,
+    "wasPriceDisplay": null,
+    "additionalInfo": null,
+    "savingsDisplay": null,
+    "bottleDepositType": null,
+    "feeText": null
+   },
+   "countryExtensions": null,
+   "categories": [
+    {
+     "id": "960000000",
+     "name": "Dairy, Eggs & Fridge",
+     "urlSlugText": "dairy-eggs-fridge"
+    },
+    {
+     "id": "1111111160",
+     "name": "Milk",
+     "urlSlugText": "dairy-eggs-fridge/milk"
+    }
+   ],
+   "assets": [
+    {
+     "url": "https://dm.apac.cms.aldi.cx/is/image/aldiprodapac/product/jpg/scaleWidth/{width}/42ff8a37-78b4-41b4-b723-40631f08d84a/{slug}",
+     "maxWidth": 1500,
+     "maxHeight": 1500,
+     "mimeType": "image/*",
+     "assetType": "FR01",
+     "alt": null,
+     "displayName": null
+    }
+   ],
+   "badges": []
+  },
+  {
+   "sku": "000000000000380234",
+   "name": "Cavendish Bananas Loose",
+   "brandName": null,
+   "urlSlugText": "no-brand-cavendish-bananas-loose",
+   "urlSlugTextAlternatives": [],
+   "ageRestriction": null,
+   "alcohol": null,
+   "discontinued": false,
+   "discontinuedNote": null,
+   "notForSale": true,
+   "notForSaleReason": null,
+   "quantityMin": 0.18,
+   "quantityMax": 99,
+   "quantityInterval": 0.18,
+   "quantityDefault": 0.18,
+   "quantityUnit": "kg",
+   "weightType": "3",
+   "sellingSize": "approx. 0.18 kg per piece",
+   "energyClass": null,
+   "onSaleDateDisplay": null,
+   "onSaleDate": null,
+   "isAbstract": false,
+   "abstractSku": "000000000000380234A",
+   "isDropship": false,
+   "sellingUnitDisplay": null,
+   "price": {
+    "amount": 449,
+    "amountRelevant": 81,
+    "amountRelevantDisplay": "$0.81",
+    "bottleDeposit": 0,
+    "bottleDepositDisplay": "$0.00",
+    "comparison": 449,
+    "comparisonDisplay": "$4.49 per 1 kg",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "perUnit": 0.18,
+    "perUnitDisplay": "0.18 kg",
+    "wasPriceDisplay": null,
+    "additionalInfo": null,
+    "savingsDisplay": null,
+    "bottleDepositType": null,
+    "feeText": null
+   },
+   "countryExtensions": null,
+   "categories": [
+    {
+     "id": "950000000",
+     "name": "Fruits & Vegetables",
+     "urlSlugText": "fruits-vegetables"
+    },
+    {
+     "id": "1111111152",
+     "name": "Fresh Fruits",
+     "urlSlugText": "fruits-vegetables/fresh-fruits"
+    }
+   ],
+   "assets": [
+    {
+     "url": "https://dm.apac.cms.aldi.cx/is/image/aldiprodapac/product/jpg/scaleWidth/{width}/9494147d-0827-430b-8b66-92c1cefb4f52/{slug}",
+     "maxWidth": 1500,
+     "maxHeight": 1500,
+     "mimeType": "image/*",
+     "assetType": "FR01",
+     "alt": null,
+     "displayName": null
+    }
+   ],
+   "badges": []
+  },
+  {
+   "sku": "000000000000371039",
+   "name": "Chicken Breast Chips 1kg",
+   "brandName": "FARMWOOD",
+   "urlSlugText": "farmwood-chicken-breast-chips-1kg",
+   "urlSlugTextAlternatives": [],
+   "ageRestriction": null,
+   "alcohol": null,
+   "discontinued": false,
+   "discontinuedNote": null,
+   "notForSale": true,
+   "notForSaleReason": null,
+   "quantityMin": 1,
+   "quantityMax": 99,
+   "quantityInterval": 1,
+   "quantityDefault": 1,
+   "quantityUnit": "ea",
+   "weightType": "0",
+   "sellingSize": "1 kg",
+   "energyClass": null,
+   "onSaleDateDisplay": null,
+   "onSaleDate": null,
+   "isAbstract": false,
+   "abstractSku": "000000000000371039A",
+   "isDropship": false,
+   "sellingUnitDisplay": null,
+   "price": {
+    "amount": 849,
+    "amountRelevant": 849,
+    "amountRelevantDisplay": "$8.49",
+    "bottleDeposit": 0,
+    "bottleDepositDisplay": "$0.00",
+    "comparison": 849,
+    "comparisonDisplay": "$8.49 per 1 kg",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "perUnit": null,
+    "perUnitDisplay": null,
+    "wasPriceDisplay": null,
+    "additionalInfo": null,
+    "savingsDisplay": null,
+    "bottleDepositType": null,
+    "feeText": null
+   },
+   "countryExtensions": null,
+   "categories": [
+    {
+     "id": "980000000",
+     "name": "Freezer",
+     "urlSlugText": "freezer"
+    },
+    {
+     "id": "1111111197",
+     "name": "Frozen Meat & Seafood",
+     "urlSlugText": "freezer/frozen-meat-seafood"
+    }
+   ],
+   "assets": [
+    {
+     "url": "https://dm.apac.cms.aldi.cx/is/image/aldiprodapac/product/jpg/scaleWidth/{width}/7aa5d9d7-5f05-4b65-bbb4-a658ba1182af/{slug}",
+     "maxWidth": 1500,
+     "maxHeight": 1500,
+     "mimeType": "image/*",
+     "assetType": "FR01",
+     "alt": null,
+     "displayName": null
+    }
+   ],
+   "badges": []
+  },
+  {
+   "sku": "000000000000399104",
+   "name": "Shredded Chicken Breast 500g",
+   "brandName": "BERG",
+   "urlSlugText": "berg-shredded-chicken-breast-500g",
+   "urlSlugTextAlternatives": [],
+   "ageRestriction": null,
+   "alcohol": null,
+   "discontinued": false,
+   "discontinuedNote": null,
+   "notForSale": true,
+   "notForSaleReason": null,
+   "quantityMin": 1,
+   "quantityMax": 99,
+   "quantityInterval": 1,
+   "quantityDefault": 1,
+   "quantityUnit": "ea",
+   "weightType": "0",
+   "sellingSize": "0.5 kg",
+   "energyClass": null,
+   "onSaleDateDisplay": null,
+   "onSaleDate": null,
+   "isAbstract": false,
+   "abstractSku": "000000000000399104A",
+   "isDropship": false,
+   "sellingUnitDisplay": null,
+   "price": {
+    "amount": 699,
+    "amountRelevant": 699,
+    "amountRelevantDisplay": "$6.99",
+    "bottleDeposit": 0,
+    "bottleDepositDisplay": "$0.00",
+    "comparison": 1398,
+    "comparisonDisplay": "$13.98 per 1 kg",
+    "currencyCode": "AUD",
+    "currencySymbol": "$",
+    "perUnit": null,
+    "perUnitDisplay": null,
+    "wasPriceDisplay": null,
+    "additionalInfo": null,
+    "savingsDisplay": null,
+    "bottleDepositType": null,
+    "feeText": null
+   },
+   "countryExtensions": null,
+   "categories": [
+    {
+     "id": "930000000",
+     "name": "Deli & Chilled Meats",
+     "urlSlugText": "deli-chilled-meats"
+    },
+    {
+     "id": "1111111137",
+     "name": "Deli Meats",
+     "urlSlugText": "deli-chilled-meats/deli-meats"
+    }
+   ],
+   "assets": [
+    {
+     "url": "https://dm.apac.cms.aldi.cx/is/image/aldiprodapac/product/jpg/scaleWidth/{width}/32ce4420-dd2a-4cd6-939d-886143856f75/{slug}",
+     "maxWidth": 1500,
+     "maxHeight": 1500,
+     "mimeType": "image/*",
+     "assetType": "FR01",
+     "alt": null,
+     "displayName": null
+    }
+   ],
+   "badges": []
+  }
+ ]
+}

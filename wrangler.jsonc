@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Keep this name the same as the Worker name in the Cloudflare dashboard.
+  "name": "grocery-app",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-08-01",
+  // The PWA is served straight from /public; anything else (i.e. /api/*) runs the Worker.
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  }
+  // Secret APP_PASSCODE is set in the dashboard (Settings > Variables and Secrets), never here.
+}

@@ -1,0 +1,557 @@
+{
+ "noOfResults": 141,
+ "results": [
+  {
+   "_type": "PRODUCT",
+   "id": 8150288,
+   "adId": null,
+   "adSource": null,
+   "featured": false,
+   "name": "Full Cream Milk",
+   "brand": "Coles",
+   "description": "COLES FULL CREAM MILK 3L",
+   "size": "3L",
+   "availability": true,
+   "availabilityType": "InStoreAndOnline",
+   "availableQuantity": 463,
+   "imageUris": [
+    {
+     "altText": "",
+     "type": "default",
+     "uri": "/8/8150288.jpg"
+    }
+   ],
+   "merchandiseHeir": {
+    "tradeProfitCentre": "DAIRY",
+    "categoryGroup": "DAIRY",
+    "category": "DY MILK",
+    "subCategory": "WHOLE WHITE",
+    "className": "WHOLE 3-3.9L"
+   },
+   "onlineHeirs": [
+    {
+     "aisle": "Full Cream Milk",
+     "category": "Milk",
+     "subCategory": "Dairy, Eggs & Fridge",
+     "categoryId": "8881800",
+     "aisleId": "8881801",
+     "subCategoryId": "1300"
+    }
+   ],
+   "pricing": {
+    "now": 4.95,
+    "rawPriceNow": 4.95,
+    "was": 0,
+    "unit": {
+     "quantity": 1,
+     "ofMeasureQuantity": 1,
+     "ofMeasureUnits": "l",
+     "price": 1.65,
+     "ofMeasureType": "l",
+     "isWeighted": false,
+     "isIncremental": false
+    },
+    "comparable": "$1.65/ 1L",
+    "onlineSpecial": false
+   },
+   "variations": {
+    "total": 18
+   }
+  },
+  {
+   "_type": "SINGLE_TILE",
+   "adId": "search_ctatile_supplier_br360_51369_128931",
+   "adSource": "aem",
+   "campaignName": "/content/dam/coles-onesite/contentfragment/ecommerce-supplier-media/23-09-2026/single-tile/128931_Bega_Search_Single Tile_Milk",
+   "expiry": null,
+   "headingText": null,
+   "bannerText": "Dairy Farmers Heart - health goodness. Oomph there it is!",
+   "bannerTextColour": null,
+   "ctaFlag": null,
+   "ctaText": "Shop Now",
+   "ctaTextAccessibility": "Shop Dairy farmers milk",
+   "ctaLink": "/promotions/bega-df-heart-active?pid=search_ctatile_supplier_br360_51369_128931",
+   "backgroundColour": "#3079A5",
+   "backgroundImage": "/content/dam/coles/cusp/suppliers/fy27/2026-09-09/51369-ST-BG.png",
+   "backgroundImagePosition": null,
+   "secondaryBackgroundImage": null,
+   "secondaryBackgroundImagePosition": null,
+   "heroImage": "/content/dam/coles/cusp/suppliers/fy27/2026-09-09/51369-ST-Pck.png",
+   "heroImageAltText": "Dairy Farmers",
+   "secondaryHeroImage": "/content/dam/coles/cusp/suppliers/fy27/2026-09-09/51369-Logo.png",
+   "secondaryHeroImageAltText": "Dairy farmers logo",
+   "productIds": [
+    "7258880",
+    "1156640"
+   ],
+   "additionalFields": [
+    {
+     "id": "description",
+     "value": "Reduces Cholesterol by up to 10%.*"
+    },
+    {
+     "id": "termsAndConditions.plainText",
+     "value": "*As part of a healthy diet low in saturated fat, 2g of plant sterols daily can reduce cholesterol. Full disclaimer here. "
+    },
+    {
+     "id": "termsAndConditions.html",
+     "value": "<p>*As part of a healthy diet low in saturated fat, 2g of plant sterols daily can reduce cholesterol. Full disclaimer <a href=\"https://www.coles.com.au/promotions/bega-df-heart-active#disclaimer\">here</a>.&nbsp;</p>\n"
+    },
+    {
+     "id": "singleTileTheme",
+     "value": "light"
+    }
+   ]
+  },
+  {
+   "_type": "PRODUCT",
+   "id": 439693,
+   "adId": null,
+   "adSource": null,
+   "featured": false,
+   "name": "Full Cream Milk",
+   "brand": "Coles",
+   "description": "COLES FULL CREAM MILK 2L",
+   "size": "2L",
+   "availability": true,
+   "availabilityType": "InStoreAndOnline",
+   "availableQuantity": 442,
+   "imageUris": [
+    {
+     "altText": "",
+     "type": "default",
+     "uri": "/4/439693.jpg"
+    }
+   ],
+   "merchandiseHeir": {
+    "tradeProfitCentre": "DAIRY",
+    "categoryGroup": "DAIRY",
+    "category": "DY MILK",
+    "subCategory": "WHOLE WHITE",
+    "className": "WHOLE 2-2.9L"
+   },
+   "onlineHeirs": [
+    {
+     "aisle": "Full Cream Milk",
+     "category": "Milk",
+     "subCategory": "Dairy, Eggs & Fridge",
+     "categoryId": "8881800",
+     "aisleId": "8881801",
+     "subCategoryId": "1300"
+    }
+   ],
+   "pricing": {
+    "now": 3.4,
+    "rawPriceNow": 3.4,
+    "was": 0,
+    "unit": {
+     "quantity": 1,
+     "ofMeasureQuantity": 1,
+     "ofMeasureUnits": "l",
+     "price": 1.7,
+     "ofMeasureType": "l",
+     "isWeighted": false,
+     "isIncremental": false
+    },
+    "comparable": "$1.70/ 1L",
+    "onlineSpecial": false
+   },
+   "variations": {
+    "total": 18
+   }
+  },
+  {
+   "_type": "PRODUCT",
+   "id": 8379529,
+   "adId": null,
+   "adSource": null,
+   "featured": false,
+   "name": "Lite Reduced Fat Milk",
+   "brand": "Coles",
+   "description": "COLES LITE REDUCED FAT MILK 2L",
+   "size": "2L",
+   "availability": true,
+   "availabilityType": "InStoreAndOnline",
+   "availableQuantity": 115,
+   "imageUris": [
+    {
+     "altText": "",
+     "type": "default",
+     "uri": "/8/8379529.jpg"
+    }
+   ],
+   "merchandiseHeir": {
+    "tradeProfitCentre": "DAIRY",
+    "categoryGroup": "DAIRY",
+    "category": "DY MILK",
+    "subCategory": "FAT REDUCED",
+    "className": "LOW FAT"
+   },
+   "onlineHeirs": [
+    {
+     "aisle": "Skim & Low Fat Milk",
+     "category": "Milk",
+     "subCategory": "Dairy, Eggs & Fridge",
+     "categoryId": "8881800",
+     "aisleId": "8881802",
+     "subCategoryId": "1300"
+    }
+   ],
+   "pricing": {
+    "now": 3.4,
+    "rawPriceNow": 3.4,
+    "was": 0,
+    "unit": {
+     "quantity": 1,
+     "ofMeasureQuantity": 1,
+     "ofMeasureUnits": "l",
+     "price": 1.7,
+     "ofMeasureType": "l",
+     "isWeighted": false,
+     "isIncremental": false
+    },
+    "comparable": "$1.70/ 1L",
+    "onlineSpecial": false
+   },
+   "variations": {
+    "total": 12
+   }
+  },
+  {
+   "_type": "PRODUCT",
+   "id": 9052681,
+   "adId": null,
+   "adSource": null,
+   "featured": false,
+   "name": "Dairy Full Cream Milk",
+   "brand": "Coles",
+   "description": "COLES FULL CREAM MILK BTL 1L TAS",
+   "size": "1L",
+   "availability": true,
+   "availabilityType": "InStoreAndOnline",
+   "availableQuantity": 119,
+   "imageUris": [
+    {
+     "altText": "",
+     "type": "default",
+     "uri": "/9/9052681.jpg"
+    }
+   ],
+   "merchandiseHeir": {
+    "tradeProfitCentre": "DAIRY",
+    "categoryGroup": "DAIRY",
+    "category": "DY MILK",
+    "subCategory": "WHOLE WHITE",
+    "className": "WHOLE 1L-1.9L"
+   },
+   "onlineHeirs": [
+    {
+     "aisle": "Full Cream Milk",
+     "category": "Milk",
+     "subCategory": "Dairy, Eggs & Fridge",
+     "categoryId": "8881800",
+     "aisleId": "8881801",
+     "subCategoryId": "1300"
+    }
+   ],
+   "pricing": {
+    "now": 1.75,
+    "rawPriceNow": 1.75,
+    "was": 0,
+    "unit": {
+     "quantity": 1,
+     "ofMeasureQuantity": 1,
+     "ofMeasureUnits": "l",
+     "price": 1.75,
+     "ofMeasureType": "l",
+     "isWeighted": false,
+     "isIncremental": false
+    },
+    "comparable": "$1.75/ 1L",
+    "onlineSpecial": false
+   },
+   "variations": {
+    "total": 6
+   }
+  },
+  {
+   "_type": "PRODUCT",
+   "id": 7667368,
+   "adId": null,
+   "adSource": null,
+   "featured": false,
+   "name": "Australian Full Cream Long Life Milk",
+   "brand": "Coles",
+   "description": "COLES AUSTRALIAN FULL CREAM LONG LIFE MILK:.:1 LITRE",
+   "size": "1L",
+   "availability": true,
+   "availabilityType": "InStoreAndOnline",
+   "availableQuantity": 710,
+   "imageUris": [
+    {
+     "altText": "",
+     "type": "default",
+     "uri": "/7/7667368.jpg"
+    }
+   ],
+   "merchandiseHeir": {
+    "tradeProfitCentre": "GROCERY",
+    "categoryGroup": "IMPULSE",
+    "category": "GROCERY MILK",
+    "subCategory": "DAIRY MILK",
+    "className": "SKIM"
+   },
+   "onlineHeirs": [
+    {
+     "aisle": "Long Life Milk",
+     "category": "Long-Life Milk",
+     "subCategory": "Drinks",
+     "categoryId": "98629",
+     "aisleId": "98660",
+     "subCategoryId": "11456"
+    },
+    {
+     "aisle": "Long-Life-Milk",
+     "category": "Long Life-Milk",
+     "subCategory": "Dairy, Eggs & Fridge",
+     "categoryId": "8895200",
+     "aisleId": "8895201",
+     "subCategoryId": "1300"
+    }
+   ],
+   "pricing": {
+    "now": 1.75,
+    "rawPriceNow": 1.75,
+    "was": 0,
+    "unit": {
+     "quantity": 1,
+     "ofMeasureQuantity": 1,
+     "ofMeasureUnits": "l",
+     "price": 1.75,
+     "ofMeasureType": "l",
+     "isWeighted": false,
+     "isIncremental": false
+    },
+    "comparable": "$1.75/ 1L",
+    "promotionType": "EVERYDAY",
+    "onlineSpecial": false
+   },
+   "variations": {
+    "total": 2
+   }
+  },
+  {
+   "_type": "PRODUCT",
+   "id": 9760091,
+   "adId": null,
+   "adSource": null,
+   "featured": false,
+   "name": "Full Cream Milk",
+   "brand": "a2 Milk",
+   "description": "A2 FULL CREAM MILK 2L",
+   "size": "2L",
+   "availability": true,
+   "availabilityType": "InStoreAndOnline",
+   "availableQuantity": 98,
+   "imageUris": [
+    {
+     "altText": "",
+     "type": "default",
+     "uri": "/9/9760091.jpg"
+    }
+   ],
+   "merchandiseHeir": {
+    "tradeProfitCentre": "DAIRY",
+    "categoryGroup": "DAIRY",
+    "category": "DY MILK",
+    "subCategory": "WHOLE WHITE",
+    "className": "WHOLE 2-2.9L"
+   },
+   "onlineHeirs": [
+    {
+     "aisle": "Full Cream Milk",
+     "category": "Milk",
+     "subCategory": "Dairy, Eggs & Fridge",
+     "categoryId": "8881800",
+     "aisleId": "8881801",
+     "subCategoryId": "1300"
+    }
+   ],
+   "pricing": {
+    "now": 7.3,
+    "rawPriceNow": 7.3,
+    "was": 0,
+    "unit": {
+     "quantity": 1,
+     "ofMeasureQuantity": 1,
+     "ofMeasureUnits": "l",
+     "price": 3.65,
+     "ofMeasureType": "l",
+     "isWeighted": false,
+     "isIncremental": false
+    },
+    "comparable": "$3.65/ 1L",
+    "onlineSpecial": false
+   },
+   "variations": {
+    "total": 8
+   }
+  },
+  {
+   "_type": "PRODUCT",
+   "id": 9107728,
+   "adId": null,
+   "adSource": null,
+   "featured": false,
+   "name": "Fresh Lite Milk",
+   "brand": "Coles",
+   "description": "COLES FRESH LITE MILK 3L",
+   "size": "3L",
+   "availability": false,
+   "availabilityType": "InStoreAndOnline",
+   "imageUris": [
+    {
+     "altText": "",
+     "type": "default",
+     "uri": "/9/9107728.jpg"
+    }
+   ],
+   "merchandiseHeir": {
+    "tradeProfitCentre": "DAIRY",
+    "categoryGroup": "DAIRY",
+    "category": "DY MILK",
+    "subCategory": "FAT REDUCED",
+    "className": "LOW FAT"
+   },
+   "onlineHeirs": [
+    {
+     "aisle": "Skim & Low Fat Milk",
+     "category": "Milk",
+     "subCategory": "Dairy, Eggs & Fridge",
+     "categoryId": "8881800",
+     "aisleId": "8881802",
+     "subCategoryId": "1300"
+    }
+   ],
+   "pricing": null,
+   "variations": {
+    "total": 12
+   }
+  },
+  {
+   "_type": "PRODUCT",
+   "id": 3186175,
+   "adId": null,
+   "adSource": null,
+   "featured": false,
+   "name": "Full Cream Milk",
+   "brand": "a2 Milk",
+   "description": "A2 DAIRY FULL CREAM MILK 3L",
+   "size": "3L",
+   "availability": true,
+   "availabilityType": "InStoreAndOnline",
+   "availableQuantity": 90,
+   "imageUris": [
+    {
+     "altText": "",
+     "type": "default",
+     "uri": "/3/3186175.jpg"
+    }
+   ],
+   "merchandiseHeir": {
+    "tradeProfitCentre": "DAIRY",
+    "categoryGroup": "DAIRY",
+    "category": "DY MILK",
+    "subCategory": "WHOLE WHITE",
+    "className": "WHOLE 3-3.9L"
+   },
+   "onlineHeirs": [
+    {
+     "aisle": "Full Cream Milk",
+     "category": "Milk",
+     "subCategory": "Dairy, Eggs & Fridge",
+     "categoryId": "8881800",
+     "aisleId": "8881801",
+     "subCategoryId": "1300"
+    }
+   ],
+   "pricing": {
+    "now": 10.5,
+    "rawPriceNow": 10.5,
+    "was": 0,
+    "unit": {
+     "quantity": 1,
+     "ofMeasureQuantity": 1,
+     "ofMeasureUnits": "l",
+     "price": 3.5,
+     "ofMeasureType": "l",
+     "isWeighted": false,
+     "isIncremental": false
+    },
+    "comparable": "$3.50/ 1L",
+    "onlineSpecial": false
+   },
+   "variations": {
+    "total": 6
+   }
+  },
+  {
+   "_type": "PRODUCT",
+   "id": 4964414,
+   "adId": null,
+   "adSource": null,
+   "featured": false,
+   "name": "Tim Tam Deluxe Chocolate Biscuits Salted Caramel Brownie",
+   "brand": "Arnott's",
+   "description": "ARNOTTS TIM TAM DELUXE CHOCOLATE BISCUITS:SALTED CARAMEL BROWNIE:.:175 GRAM",
+   "size": "175g",
+   "availability": true,
+   "availabilityType": "InStoreAndOnline",
+   "availableQuantity": 32,
+   "imageUris": [
+    {
+     "altText": "",
+     "type": "default",
+     "uri": "/4/4964414.jpg"
+    }
+   ],
+   "merchandiseHeir": {
+    "tradeProfitCentre": "GROCERY",
+    "categoryGroup": "IMPULSE",
+    "category": "BISCUITS & COOKIES",
+    "subCategory": "CHOCOLATE BISCUITS",
+    "className": "CHOCOLATE BISCUITS"
+   },
+   "onlineHeirs": [
+    {
+     "aisle": "Chocolate Biscuits",
+     "category": "Biscuits & Cookies",
+     "subCategory": "Chips, Chocolates & Snacks",
+     "categoryId": "657638318",
+     "aisleId": "657638597",
+     "subCategoryId": "8916201"
+    }
+   ],
+   "pricing": {
+    "now": 5,
+    "rawPriceNow": 5,
+    "was": 0,
+    "unit": {
+     "quantity": 1,
+     "ofMeasureQuantity": 100,
+     "ofMeasureUnits": "g",
+     "price": 2.86,
+     "ofMeasureType": "g",
+     "isWeighted": false,
+     "isIncremental": false
+    },
+    "comparable": "$2.86/ 100g",
+    "promotionType": "SPECIAL",
+    "onlineSpecial": false
+   },
+   "variations": {
+    "total": 3
+   }
+  }
+ ]
+}

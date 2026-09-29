@@ -1,0 +1,17 @@
+{
+  "name": "Trolley — grocery price compare",
+  "short_name": "Trolley",
+  "description": "Your grocery list, priced at Woolworths, Coles and ALDI — with the cheapest pick for every item.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f4ee",
+  "theme_color": "#f6f4ee",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

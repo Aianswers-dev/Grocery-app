@@ -1,0 +1,305 @@
+{
+ "SearchResultsCount": 2337,
+ "Products": [
+  {
+   "Products": [
+    {
+     "Stockcode": 6073909,
+     "Name": "Full+ On The Go Meal Replacement Chocolate",
+     "DisplayName": "Full+ On The Go Meal Replacement Chocolate 480mL",
+     "Brand": "Full+",
+     "PackageSize": "480mL",
+     "Price": 4.75,
+     "InstorePrice": 4.75,
+     "WasPrice": 5.95,
+     "CupPrice": 9.9,
+     "CupMeasure": "1L",
+     "CupString": "$9.90 / 1L",
+     "IsOnSpecial": true,
+     "IsHalfPrice": false,
+     "IsInStock": true,
+     "IsAvailable": true,
+     "UrlFriendlyName": "full-on-the-go-meal-replacement-chocolate",
+     "MediumImageFile": "https://cdn1.woolworths.media/content/wowproductimages/medium/6073909.jpg",
+     "Unit": "Each",
+     "AdditionalAttributes": {
+      "piessubcategorynamesjson": "[\"Protein Drinks\",\"Flavoured Milk & Drinks\",\"Flavoured Milk\"]",
+      "piescategorynamesjson": "[\"High Protein\",\"Drinks\",\"Milk\"]"
+     }
+    }
+   ],
+   "Name": "Full+ On The Go Meal Replacement Chocolate",
+   "DisplayName": "Full+ On The Go Meal Replacement Chocolate 480mL"
+  },
+  {
+   "Products": [
+    {
+     "Stockcode": 6074037,
+     "Name": "Full+ On The Go Meal Replacement Iced Coffee",
+     "DisplayName": "Full+ On The Go Meal Replacement Iced Coffee 480mL",
+     "Brand": "Full+",
+     "PackageSize": "480mL",
+     "Price": 4.75,
+     "InstorePrice": 4.75,
+     "WasPrice": 5.95,
+     "CupPrice": 9.9,
+     "CupMeasure": "1L",
+     "CupString": "$9.90 / 1L",
+     "IsOnSpecial": true,
+     "IsHalfPrice": false,
+     "IsInStock": true,
+     "IsAvailable": true,
+     "UrlFriendlyName": "full-on-the-go-meal-replacement-iced-coffee",
+     "MediumImageFile": "https://cdn1.woolworths.media/content/wowproductimages/medium/6074037.jpg",
+     "Unit": "Each",
+     "AdditionalAttributes": {
+      "piessubcategorynamesjson": "[\"Flavoured Milk & Drinks\",\"Flavoured Milk\"]",
+      "piescategorynamesjson": "[\"Drinks\",\"Milk\"]"
+     }
+    }
+   ],
+   "Name": "Full+ On The Go Meal Replacement Iced Coffee",
+   "DisplayName": "Full+ On The Go Meal Replacement Iced Coffee 480mL"
+  },
+  {
+   "Products": [
+    {
+     "Stockcode": 6052122,
+     "Name": "Shake 2 Go Protein Liquid Recharge Milk Chocolate",
+     "DisplayName": "Shake 2 Go Protein Liquid Recharge Milk Chocolate 350mL",
+     "Brand": "Shake 2 Go",
+     "PackageSize": "350mL",
+     "Price": 3.5,
+     "InstorePrice": 3.5,
+     "WasPrice": 3.5,
+     "CupPrice": 10,
+     "CupMeasure": "1L",
+     "CupString": "$10.00 / 1L",
+     "IsOnSpecial": false,
+     "IsHalfPrice": false,
+     "IsInStock": true,
+     "IsAvailable": true,
+     "UrlFriendlyName": "shake-2-go-protein-liquid-recharge-milk-chocolate",
+     "MediumImageFile": "https://cdn1.woolworths.media/content/wowproductimages/medium/6052122.jpg",
+     "Unit": "Each",
+     "AdditionalAttributes": {
+      "piessubcategorynamesjson": "[\"Protein Drinks\",\"Flavoured Milk & Drinks\",\"Flavoured Milk\"]",
+      "piescategorynamesjson": "[\"High Protein\",\"Drinks\",\"Milk\"]"
+     }
+    }
+   ],
+   "Name": "Shake 2 Go Protein Liquid Recharge Milk Chocolate",
+   "DisplayName": "Shake 2 Go Protein Liquid Recharge Milk Chocolate 350mL"
+  },
+  {
+   "Products": [
+    {
+     "Stockcode": 6052006,
+     "Name": "Shake 2 Go Protein Liquid Recharge Milk Vanilla",
+     "DisplayName": "Shake 2 Go Protein Liquid Recharge Milk Vanilla 350mL",
+     "Brand": "Shake 2 Go",
+     "PackageSize": "350mL",
+     "Price": 3.5,
+     "InstorePrice": 3.5,
+     "WasPrice": 3.5,
+     "CupPrice": 10,
+     "CupMeasure": "1L",
+     "CupString": "$10.00 / 1L",
+     "IsOnSpecial": false,
+     "IsHalfPrice": false,
+     "IsInStock": true,
+     "IsAvailable": true,
+     "UrlFriendlyName": "shake-2-go-protein-liquid-recharge-milk-vanilla",
+     "MediumImageFile": "https://cdn1.woolworths.media/content/wowproductimages/medium/6052006.jpg",
+     "Unit": "Each",
+     "AdditionalAttributes": {
+      "piessubcategorynamesjson": "[\"Flavoured Milk & Drinks\",\"Flavoured Milk\"]",
+      "piescategorynamesjson": "[\"Drinks\",\"Milk\"]"
+     }
+    }
+   ],
+   "Name": "Shake 2 Go Protein Liquid Recharge Milk Vanilla",
+   "DisplayName": "Shake 2 Go Protein Liquid Recharge Milk Vanilla 350mL"
+  },
+  {
+   "Products": [
+    {
+     "Stockcode": 888140,
+     "Name": "Woolworths Full Cream Milk",
+     "DisplayName": "Woolworths Full Cream Milk 3L",
+     "Brand": "Woolworths",
+     "PackageSize": "3L",
+     "Price": 4.95,
+     "InstorePrice": 4.95,
+     "WasPrice": 4.95,
+     "CupPrice": 1.65,
+     "CupMeasure": "1L",
+     "CupString": "$1.65 / 1L",
+     "IsOnSpecial": false,
+     "IsHalfPrice": false,
+     "IsInStock": true,
+     "IsAvailable": true,
+     "UrlFriendlyName": "woolworths-full-cream-milk",
+     "MediumImageFile": "https://cdn1.woolworths.media/content/wowproductimages/medium/888140.jpg",
+     "Unit": "Each",
+     "AdditionalAttributes": {
+      "piessubcategorynamesjson": "[\"Full Cream Milk\"]",
+      "piescategorynamesjson": "[\"Milk\"]"
+     }
+    }
+   ],
+   "Name": "Woolworths Full Cream Milk",
+   "DisplayName": "Woolworths Full Cream Milk 3L"
+  },
+  {
+   "Products": [
+    {
+     "Stockcode": 888137,
+     "Name": "Woolworths Full Cream Milk",
+     "DisplayName": "Woolworths Full Cream Milk 2L",
+     "Brand": "Woolworths",
+     "PackageSize": "2L",
+     "Price": 3.4,
+     "InstorePrice": 3.4,
+     "WasPrice": 3.4,
+     "CupPrice": 1.7,
+     "CupMeasure": "1L",
+     "CupString": "$1.70 / 1L",
+     "IsOnSpecial": false,
+     "IsHalfPrice": false,
+     "IsInStock": true,
+     "IsAvailable": true,
+     "UrlFriendlyName": "woolworths-full-cream-milk",
+     "MediumImageFile": "https://cdn1.woolworths.media/content/wowproductimages/medium/888137.jpg",
+     "Unit": "Each",
+     "AdditionalAttributes": {
+      "piessubcategorynamesjson": "[\"Full Cream Milk\"]",
+      "piescategorynamesjson": "[\"Milk\"]"
+     }
+    }
+   ],
+   "Name": "Woolworths Full Cream Milk",
+   "DisplayName": "Woolworths Full Cream Milk 2L"
+  },
+  {
+   "Products": [
+    {
+     "Stockcode": 88436,
+     "Name": "Dairy Farmers Full Cream Milk Full Cream Milk",
+     "DisplayName": "Dairy Farmers Full Cream Milk 2L",
+     "Brand": "Dairy Farmers",
+     "PackageSize": "2L",
+     "Price": 4.7,
+     "InstorePrice": 4.7,
+     "WasPrice": 4.7,
+     "CupPrice": 2.35,
+     "CupMeasure": "1L",
+     "CupString": "$2.35 / 1L",
+     "IsOnSpecial": false,
+     "IsHalfPrice": false,
+     "IsInStock": true,
+     "IsAvailable": true,
+     "UrlFriendlyName": "dairy-farmers-full-cream-milk-full-cream-milk",
+     "MediumImageFile": "https://cdn1.woolworths.media/content/wowproductimages/medium/088436.jpg",
+     "Unit": "Each",
+     "AdditionalAttributes": {
+      "piessubcategorynamesjson": "[\"Full Cream Milk\"]",
+      "piescategorynamesjson": "[\"Milk\"]"
+     }
+    }
+   ],
+   "Name": "Dairy Farmers Full Cream Milk Full Cream Milk",
+   "DisplayName": "Dairy Farmers Full Cream Milk 2L"
+  },
+  {
+   "Products": [
+    {
+     "Stockcode": 133211,
+     "Name": "Cavendish Bananas",
+     "DisplayName": "Cavendish Bananas each",
+     "Brand": null,
+     "PackageSize": "each",
+     "Price": 0.86,
+     "InstorePrice": 0.86,
+     "WasPrice": 0.86,
+     "CupPrice": 0.86,
+     "CupMeasure": "1EA",
+     "CupString": "$0.86 / 1EA",
+     "IsOnSpecial": false,
+     "IsHalfPrice": false,
+     "IsInStock": true,
+     "IsAvailable": true,
+     "UrlFriendlyName": "cavendish-bananas",
+     "MediumImageFile": "https://cdn1.woolworths.media/content/wowproductimages/medium/133211.jpg",
+     "Unit": "Each",
+     "AdditionalAttributes": {
+      "piessubcategorynamesjson": "[\"Kids Snacks & Lunch\",\"Snacking Fruit\",\"Bananas\"]",
+      "piescategorynamesjson": "[\"Healthier Lunch Box\",\"Fruit & Veg\",\"Fruit\"]"
+     }
+    }
+   ],
+   "Name": "Cavendish Bananas",
+   "DisplayName": "Cavendish Bananas each"
+  },
+  {
+   "Products": [
+    {
+     "Stockcode": 157649,
+     "Name": "Eat Later Cavendish Bananas",
+     "DisplayName": "Eat Later Cavendish Bananas each",
+     "Brand": null,
+     "PackageSize": "each",
+     "Price": 0.86,
+     "InstorePrice": 0.86,
+     "WasPrice": 0.86,
+     "CupPrice": 0.86,
+     "CupMeasure": "1EA",
+     "CupString": "$0.86 / 1EA",
+     "IsOnSpecial": false,
+     "IsHalfPrice": false,
+     "IsInStock": true,
+     "IsAvailable": true,
+     "UrlFriendlyName": "eat-later-cavendish-bananas",
+     "MediumImageFile": "https://cdn1.woolworths.media/content/wowproductimages/medium/157649.jpg",
+     "Unit": "Each",
+     "AdditionalAttributes": {
+      "piessubcategorynamesjson": "[\"Bananas\"]",
+      "piescategorynamesjson": "[\"Fruit\"]"
+     }
+    }
+   ],
+   "Name": "Eat Later Cavendish Bananas",
+   "DisplayName": "Eat Later Cavendish Bananas each"
+  },
+  {
+   "Products": [
+    {
+     "Stockcode": 106218,
+     "Name": "Bananas Kids",
+     "DisplayName": "Bananas Kids 5 pack",
+     "Brand": null,
+     "PackageSize": "5 pack",
+     "Price": null,
+     "InstorePrice": null,
+     "WasPrice": 3,
+     "CupPrice": null,
+     "CupMeasure": "1EA",
+     "CupString": "",
+     "IsOnSpecial": false,
+     "IsHalfPrice": false,
+     "IsInStock": false,
+     "IsAvailable": false,
+     "UrlFriendlyName": "bananas-kids",
+     "MediumImageFile": "https://cdn1.woolworths.media/content/wowproductimages/medium/106218.jpg",
+     "Unit": "Each",
+     "AdditionalAttributes": {
+      "piessubcategorynamesjson": "[\"Kids Snacks & Lunch\",\"Prepacked Fruit\",\"Snacking Fruit\",\"Bananas\"]",
+      "piescategorynamesjson": "[\"Healthier Lunch Box\",\"Snacking\",\"Fruit & Veg\",\"Fruit\"]"
+     }
+    }
+   ],
+   "Name": "Bananas Kids",
+   "DisplayName": "Bananas Kids 5 pack"
+  }
+ ]
+}
